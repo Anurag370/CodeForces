@@ -1,14 +1,15 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-int main(){
 
-    int n,s=0;
-    cin>>n;
-    for(int i=1;i<=n;i++){
-        s+=pow(-1,i)*i;
+int main() {
+    long long n;
+    cin >> n;
+
+    if (n % 2 == 0) {
+        cout << -(n / 2) << endl;
+    } else {
+        cout << (n + 1) / 2 << endl;
     }
-    cout<<s;
 
     return 0;
 }
